@@ -1,0 +1,57 @@
+/* Container for the whole 'About Us' section */
+.about-us {
+  /* background-color: #f9f9f9; white color css background */
+  background-color: #fdf8ee;
+  padding: 60px 20px; /* Adjust spacing as you like */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* A max width for better readability on large screens */
+.about-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left; /* or center, depending on preference */
+}
+
+/* Main heading for the page */
+.about-us-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Subheading (e.g., 'Our Mission') */
+.about-us-subtitle {
+  font-size: 1.8rem;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* General paragraph text styling */
+.about-us-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: black;
+  text-align: justify;
+}
+
+/* Responsive: for tablets and smaller screens */
+@media (max-width: 768px) {
+  .about-us-title {
+    font-size: 1.8rem;
+  }
+  .about-us-subtitle {
+    font-size: 1.4rem;
+  }
+  .about-us-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+/* You can add more media queries for even smaller devices if needed */

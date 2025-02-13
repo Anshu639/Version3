@@ -1,0 +1,40 @@
+/* CSS */
+.our-vision {
+  /* background-color: #f9f9f9; */
+  background-color: #fdf8ee;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.our-vision-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.our-vision-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.our-vision-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .our-vision-title {
+    font-size: 1.8rem;
+  }
+  .our-vision-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}

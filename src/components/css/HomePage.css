@@ -1,0 +1,419 @@
+/* General Styles */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 150px;
+  background-color: #fdf8ee;
+  min-height: 500px;
+}
+
+.hero .text-content {
+  flex: 1;
+}
+
+.hero-heading {
+  font-size: 60px;
+  margin: 0px;
+}
+.hero-span {
+  color: #ff7426;
+}
+
+.hero .illustration {
+  flex: 1;
+}
+
+.hero img {
+  width: 100%;
+  margin-left: 20px;
+}
+.hero-paragraph {
+  font-size: 20px;
+  line-height: 175%;
+  padding-left: 5px;
+  color: #333;
+  text-align: justify;
+  margin: 5px;
+}
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  max-width: 400px;
+  border-radius: 50px; /* Rounded edges */
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Search Input Wrapper */
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 10px;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background: #f0f0f0;
+}
+.search-icon {
+  font-size: 1.2rem;
+  color: #2d4b6c; /* Dark blue icon color */
+}
+
+/* Search Input Field */
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #2d4b6c;
+  background: transparent; /* No background for text field */
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Continue Button */
+.search-button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5a2675;
+  border: none;
+  border-radius: 50px; /* Rounded edges */
+  cursor: pointer;
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s ease-in-out;
+}
+
+.search-button:hover {
+  background-color: rgba(0, 0, 0, 0.534); /* Slightly darker purple on hover */
+  transform: scale(1.1); /* Increases button size */
+  font-size: 1.1rem; /* Increases font size */
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-between; /* Distribute feature items evenly */
+  align-items: center; /* Align items vertically */
+  padding: 0px 60px;
+  background-color: #5a2675;
+  border-radius: 20px;
+  margin: 20px 150px;
+  gap: 20px; /* Add spacing between feature items */
+  z-index: 99;
+  margin-top: 2px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center; /* Align content vertically */
+  padding: 20px;
+  border-radius: 15px;
+  gap: 20px; /* Space between icon and text */
+  width: 30%; /* Set a fixed width for feature items */
+  min-height: 150px; /* Ensure consistent height */
+}
+
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: #9865b6; /* White circular background for the icon */
+  border-radius: 20%; /* Make the icon background circular */
+  flex-shrink: 0; /* Prevent the icon from shrinking */
+}
+
+.feature-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.feature-text {
+  flex: 1; /* Take up remaining space */
+  color: #fff;
+}
+
+.feature-text h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-text p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #ddd; /* Slightly lighter text color */
+}
+
+/* Learning Experience Section */
+.learning-experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 150px;
+  background-color: #fdfaf5;
+}
+
+.learning-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.learning-illustration {
+  width: 60%;
+  max-width: 500px;
+}
+
+.learning-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.learning-text h2 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #050c26;
+  margin-bottom: 20px;
+}
+
+.learning-text h2 span {
+  color: #ff7426;
+}
+
+.learning-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.learning-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.learning-feature-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #4d2c5e;
+  padding: 15px;
+  border-radius: 20%;
+}
+
+.learning-feature-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.learning-feature-item h3 {
+  font-size: 18px;
+  margin: 4px auto;
+}
+
+.learning-feature-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 4px auto;
+}
+
+.newsletter {
+  background-color: #5a2675; /* Purple background */
+  color: white;
+  text-align: center;
+  padding: 100px 90px;
+  position: relative;
+  border-radius: 15px;
+  margin: 100px 150px;
+  max-width: 1200px;
+}
+
+.newsletter h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  width: 300px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: orange;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #e06b00;
+}
+
+.arrow-icon-news {
+  position: absolute;
+  bottom: 100px;
+  left: 120px;
+  width: 150px;
+}
+
+.bulb-icon-news {
+  position: absolute;
+  bottom: 70px;
+  right: 150px;
+  width: 135px;
+}
+
+/* Media Queries */
+
+/* Tablets (Portrait and Landscape) - Typically 768px to 1024px */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 20px 50px;
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .hero .illustration,
+  .hero .text-content {
+    flex: none;
+    width: 100%;
+  }
+
+  .hero-heading {
+    font-size: 40px; /* Smaller heading font size */
+  }
+
+  .hero-paragraph {
+    font-size: 18px;
+  }
+
+  .features {
+    flex-direction: column; /* Stack feature items vertically */
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .feature-item {
+    width: 100%; /* Full width feature items */
+    justify-content: center; /* Center items within the feature */
+  }
+
+  .learning-experience {
+    padding: 20px;
+    flex-direction: column; /* Stack learning content vertically */
+  }
+
+  .learning-illustration {
+    width: 100%; /* Full width for illustrations */
+  }
+}
+
+/* Mobile Phones (Portrait and Landscape) - Typically up to 767px */
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  .hero {
+    padding: 10px 20px;
+  }
+
+  .hero-heading {
+    font-size: 32px; /* Even smaller font size for mobile */
+  }
+
+  .hero-paragraph {
+    font-size: 16px; /* Smaller paragraph font size */
+  }
+
+  .features {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .feature-item {
+    padding: 10px; /* Less padding inside feature items */
+  }
+
+  .learning-experience {
+    padding: 10px;
+  }
+
+  .learning-text {
+    padding: 10px;
+  }
+
+  .learning-feature-item {
+    flex-direction: column; /* Stack feature icon and text */
+  }
+  .newsletter {
+    padding: 50px 20px;
+    margin: 50px 20px;
+  }
+  .newsletter h2 {
+    font-size: 1.8rem;
+  }
+  .newsletter-form {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .newsletter-form input {
+    width: 87%;
+  }
+  .arrow-icon-news,
+  .bulb-icon-news {
+    display: none; /* Hide icons on smaller screens */
+  }
+}
+@media (max-width: 480px) {
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+}
