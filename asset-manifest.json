@@ -1,17 +1,30 @@
 {
   "files": {
-    "main.css": "/Version3/static/css/main.5d7217e7.css",
-    "main.js": "/Version3/static/js/main.37ea1644.js",
+    "main.css": "/Version3/static/css/main.2fcc5a58.css",
+    "main.js": "/Version3/static/js/main.92f0aae4.js",
+    "static/media/About US-transparent.png": "/Version3/static/media/About US-transparent.2e70336dd96ac2c75863.png",
+    "static/media/techFairs.png": "/Version3/static/media/techFairs.b5bec95f77041aef1388.png",
+    "static/media/camps.png": "/Version3/static/media/camps.7c3d884dfead7447116c.png",
+    "static/media/community.png": "/Version3/static/media/community.c51ac8e1c3f3ab0543b8.png",
+    "static/media/custom.png": "/Version3/static/media/custom.fa14a45396fc1b9615e8.png",
+    "static/media/training.png": "/Version3/static/media/training.5a446afe79b9010c53bf.png",
+    "static/media/workshop.png": "/Version3/static/media/workshop.1c0011cc72445a8e3dd4.png",
+    "static/media/awareness.png": "/Version3/static/media/awareness.6197d8dc5cf1a28e9f09.png",
+    "static/media/academic.png": "/Version3/static/media/academic.6d16965851db7ced4dc7.png",
+    "static/media/publishing.png": "/Version3/static/media/publishing.46237902bd53f9c8fffb.png",
+    "static/media/vision3.png": "/Version3/static/media/vision3.aa4b37010ea81cfabb58.png",
+    "static/media/vision1.png": "/Version3/static/media/vision1.b48cfcc93d31fc2fd3b7.png",
+    "static/media/vision2.png": "/Version3/static/media/vision2.c210d50c61377481b750.png",
     "static/media/slick.svg": "/Version3/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Version3/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Version3/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Version3/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Version3/index.html",
-    "main.5d7217e7.css.map": "/Version3/static/css/main.5d7217e7.css.map",
-    "main.37ea1644.js.map": "/Version3/static/js/main.37ea1644.js.map"
+    "main.2fcc5a58.css.map": "/Version3/static/css/main.2fcc5a58.css.map",
+    "main.92f0aae4.js.map": "/Version3/static/js/main.92f0aae4.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d7217e7.css",
-    "static/js/main.37ea1644.js"
+    "static/css/main.2fcc5a58.css",
+    "static/js/main.92f0aae4.js"
   ]
 }
