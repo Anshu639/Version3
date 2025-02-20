@@ -1,0 +1,70 @@
+/* Container for the whole 'About Us' section */
+.about-us {
+  background-color: #fdf8ee;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Flexbox Container */
+.about-us-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Left Side - Image */
+.about-us-image {
+  flex: 1;
+}
+
+.about-us-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* Right Side - Text */
+.about-us-content {
+  flex: 1;
+  text-align: left;
+}
+
+/* Title */
+.about-us-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Paragraph Styling */
+.about-us-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-us-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-us-image {
+    max-width: 80%;
+  }
+  .about-us-title {
+    font-size: 1.8rem;
+  }
+  .about-us-text {
+    font-size: 0.95rem;
+  }
+}

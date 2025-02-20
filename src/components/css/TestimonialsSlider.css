@@ -1,0 +1,161 @@
+/* Testimonials Slider Section */
+.testimonials-slider {
+  padding: 50px 155px;
+  text-align: center;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonials-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonials-header p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Slider Container */
+.slider-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 60px; /* Use gap instead of card margins */
+}
+
+.testimonial-card {
+  flex: 1 0 calc(33.33% - 50px); /* Reduce the card width */
+  background: #fdfdfd;
+  border: 1px solid #eaeaea;
+  padding: 20px;
+  text-align: left;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensure padding and border fit within the card size */
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.testimonial-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonial-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-info h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0 auto;
+}
+
+.testimonial-info p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0 auto;
+}
+
+/* Dots */
+.dots {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #471d5a;
+}
+
+/* Media Queries */
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+  .testimonials-slider {
+    padding: 30px 50px; /* Reduce padding for smaller screens */
+  }
+
+  .testimonial-card {
+    flex: 1 0 calc(50% - 20px); /* Make the cards larger to fit better */
+  }
+}
+
+@media (max-width: 1024px) {
+  .testimonials-slider {
+    padding: 30px 50px;
+  }
+
+  .slider-wrapper {
+    gap: 30px; /* Smaller gap on tablet */
+  }
+
+  .testimonial-card {
+    flex: 1 0 calc(50% - 20px);
+    height: auto; /* Let the card height adjust to content */
+  }
+}
+
+/* For Mobile: up to 768px 
+   -> Show 1 card at a time */
+@media (max-width: 768px) {
+  /* 1) Reduce the large padding */
+  .testimonials-slider {
+    padding: 20px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+
+  /* 2) Ensure the slider container does not expand beyond the viewport */
+  .slider-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  /* 3) Remove large gaps so only 1 card is visible */
+  .slider-wrapper {
+    gap: 10px;
+  }
+
+  /* 4) Force each card to be 100% width */
+  .testimonial-card {
+    flex: 0 0 auto; /* Takes full width on mobile */
+    width: 300px;
+    height: auto; /* Remove fixed height */
+    margin: 0; /* No extra margin that can cause overflow */
+  }
+}

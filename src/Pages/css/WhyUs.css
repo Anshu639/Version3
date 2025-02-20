@@ -1,0 +1,54 @@
+/* Container for the whole 'Why Us' section */
+.why-us {
+  /* background-color: #f4f4f4; */
+  background-color: #fdf8ee;
+  padding: 70px 20px;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* A max width for better readability on large screens */
+.why-us-container {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Main heading for the page */
+.why-us-main-title {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Subtitles for different sections */
+.why-us-subtitle {
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* General paragraph text styling */
+.why-us-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  color: #444;
+  text-align: justify;
+}
+
+/* Responsive: for tablets and smaller screens */
+@media (max-width: 768px) {
+  .why-us-main-title {
+    font-size: 2.5rem;
+  }
+  .why-us-subtitle {
+    font-size: 1.6rem;
+  }
+  .why-us-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
