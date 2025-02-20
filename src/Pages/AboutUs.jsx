@@ -1,6 +1,6 @@
 import React from "react";
 import "./css/aboutUs.css";
-import aboutImage from "../Images/About US-transparent.png"; // Update the path based on your project
+import aboutImage from "../Images/aboutUs.png"; // Update the path based on your project
 
 const AboutUs = () => {
   return (
