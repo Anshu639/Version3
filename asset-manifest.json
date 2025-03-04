@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Version3/static/css/main.2fcc5a58.css",
-    "main.js": "/Version3/static/js/main.bd16e63d.js",
+    "main.css": "/Version3/static/css/main.251f8638.css",
+    "main.js": "/Version3/static/js/main.aca3b969.js",
     "static/media/aboutUs.png": "/Version3/static/media/aboutUs.2e70336dd96ac2c75863.png",
     "static/media/techFairs.png": "/Version3/static/media/techFairs.b5bec95f77041aef1388.png",
     "static/media/camps.png": "/Version3/static/media/camps.7c3d884dfead7447116c.png",
@@ -20,11 +20,11 @@
     "static/media/slick.ttf": "/Version3/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Version3/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Version3/index.html",
-    "main.2fcc5a58.css.map": "/Version3/static/css/main.2fcc5a58.css.map",
-    "main.bd16e63d.js.map": "/Version3/static/js/main.bd16e63d.js.map"
+    "main.251f8638.css.map": "/Version3/static/css/main.251f8638.css.map",
+    "main.aca3b969.js.map": "/Version3/static/js/main.aca3b969.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fcc5a58.css",
-    "static/js/main.bd16e63d.js"
+    "static/css/main.251f8638.css",
+    "static/js/main.aca3b969.js"
   ]
 }
