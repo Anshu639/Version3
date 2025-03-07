@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Version3/static/css/main.1067d8d3.css",
-    "main.js": "/Version3/static/js/main.a940c548.js",
-    "static/media/third.png": "/Version3/static/media/third.ab5b0864d30166ea1caa.png",
+    "main.css": "/Version3/static/css/main.85f70925.css",
+    "main.js": "/Version3/static/js/main.c96f29aa.js",
+    "static/media/third.png": "/Version3/static/media/third.7264e8d287d643d49e76.png",
     "static/media/aboutUs.png": "/Version3/static/media/aboutUs.2e70336dd96ac2c75863.png",
-    "static/media/second.png": "/Version3/static/media/second.a86b69d67687add26d04.png",
-    "static/media/first.png": "/Version3/static/media/first.2f244addb6e2b0d1f1aa.png",
     "static/media/techFairs.png": "/Version3/static/media/techFairs.b5bec95f77041aef1388.png",
     "static/media/camps.png": "/Version3/static/media/camps.7c3d884dfead7447116c.png",
+    "static/media/first.png": "/Version3/static/media/first.f2e7304c2bba0b101c7f.png",
+    "static/media/second.png": "/Version3/static/media/second.49695a5ff1697c1bd85e.png",
     "static/media/community.png": "/Version3/static/media/community.c51ac8e1c3f3ab0543b8.png",
     "static/media/custom.png": "/Version3/static/media/custom.fa14a45396fc1b9615e8.png",
     "static/media/training.png": "/Version3/static/media/training.5a446afe79b9010c53bf.png",
@@ -23,11 +23,11 @@
     "static/media/slick.ttf": "/Version3/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Version3/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Version3/index.html",
-    "main.1067d8d3.css.map": "/Version3/static/css/main.1067d8d3.css.map",
-    "main.a940c548.js.map": "/Version3/static/js/main.a940c548.js.map"
+    "main.85f70925.css.map": "/Version3/static/css/main.85f70925.css.map",
+    "main.c96f29aa.js.map": "/Version3/static/js/main.c96f29aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.1067d8d3.css",
-    "static/js/main.a940c548.js"
+    "static/css/main.85f70925.css",
+    "static/js/main.c96f29aa.js"
   ]
 }
