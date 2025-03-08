@@ -9,6 +9,10 @@ import Login from "./Pages/Login";
 import WhyUs from "./Pages/WhyUs";
 import Events from "./Pages/Events";
 import OurVision from "./Pages/OurVision";
+import Courses from "./Pages/Courses";
+import ScrollToTop from "./components/ScrollToTop";
+import FAQ from "./components/FAQ";
+import SubCourses from "./Pages/SubCourses";
 
 /* Import your separate Header and Footer components */
 import Header from "./components/Header";
@@ -18,6 +22,7 @@ import SignUp from "./Pages/SignUp";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       {/* 1) Render the global Header at the top */}
       <Header />
 
@@ -31,6 +36,9 @@ function App() {
         <Route path="/whyus" element={<WhyUs />} />
         <Route path="/events" element={<Events />} />
         <Route path="/ourVision" element={<OurVision />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/subCourses/:category/:courseName" element={<SubCourses />} />
         {/* Catch-all route for unmatched paths */}
         <Route path="*" element={<HomePage />} />
       </Routes>

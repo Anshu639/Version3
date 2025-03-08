@@ -6,7 +6,7 @@ import "./css/TeamSection.css";
 const teamMembers = [
   {
     name: "Dhananjay Pant",
-    title: "Associate System Engineer, TCS",
+    title: "Data Analyst",
     description:
       "More than 3+ years of experience in Programming Languages like Java, Python, and strong Fundamental Skills of computer science with a Master's of Computer Application Degree.",
     subject: "Data Science",
@@ -18,7 +18,7 @@ const teamMembers = [
   },
   {
     name: "Nikita Rai",
-    title: "Software engineer, Deloitte",
+    title: "Data Analyst",
     description:
       "I'm a data science post-graduate dedicated to transforming education through AI, analytics, and Power BI, empowering students and educators through hands-on workshops and training.",
     subject: "Data Science",
@@ -30,7 +30,7 @@ const teamMembers = [
   },
   {
     name: "Aakash Bhatt",
-    title: "System Engineer, TCS",
+    title: "Web Developer",
     description:
       "Passionate Full Stack Developer with expertise in Java, MERN stack, and cloud technologies. Experienced in building dynamic web applications and IoT solutions.",
     subject: "Cyber Security with Cloud",
@@ -42,7 +42,7 @@ const teamMembers = [
   },
   {
     name: "Akansha",
-    title: "Associate System Engineer, TCS",
+    title: "Data Analyst",
     description:
       "I'm a tech-driven educator with a passion for AI, data analytics, and Power BI, committed to making learning more interactive and insightful through hands-on workshops and training sessions.",
     subject: "Data Science",
@@ -54,9 +54,9 @@ const teamMembers = [
   },
   {
     name: "Amit Nautiyal",
-    title: "Software Engineer ,LTIMindtree",
+    title: "Data Analyst",
     description:
-      "Experienced in programming and data science, with strong Java, Python, and SQL skills. Passionate about hands-on learning and problem-solving.",
+      "Experienced in programming and data science, with strong Java, Python, and SQL skills. Passionate about hands-on learning , problem-solving and building scalable applications.",
     subject: "AI/ML & Data Science",
     image: `${process.env.PUBLIC_URL}/images/teamMember5.jpg`,
     social: {
@@ -116,10 +116,13 @@ const TeamSection = () => {
     <section className="team-section" {...swipeHandlers}>
       <div className="team-header">
         <h2>Our Team</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing.</p>
+        <p>
+          Meet our skilled team, committed to innovation, excellence, and
+          delivering great results.
+        </p>
       </div>
 
-      <div className="slider-container">
+      <div className="slider-container-team">
         <div
           className="slider-wrapper"
           style={{

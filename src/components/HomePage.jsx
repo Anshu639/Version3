@@ -4,6 +4,13 @@ import "./css/HomePage.css";
 import Tracks from "./Tracks";
 import TestimonialsSlider from "./TestimonialsSlider";
 import TeamSection from "./TeamSection";
+import Popup from "./Popup";
+import ImageSlider from "./ImageSlider";
+import { Link } from "react-router-dom";
+
+import img1 from "../Images/first.png";
+import img2 from "../Images/second.png";
+import img3 from "../Images/third.png";
 
 const eventList = [
   { id: "training", name: "Hands-On Training & Certification Courses" },
@@ -16,6 +23,13 @@ const eventList = [
   { id: "awareness", name: "Awareness Programs" },
   { id: "custom-events", name: "Custom Events & Corporate Collaborations" },
 ];
+
+// const sliderImages = [
+//   "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+//   "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+//   "https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80",
+// ];
+const sliderImages = [img1, img2, img3];
 
 const HomePage = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -44,6 +58,7 @@ const HomePage = () => {
   return (
     <div>
       {/* Hero Section */}
+      <ImageSlider images={sliderImages} />
       <section className="hero">
         <div className="text-content">
           <h1 className="hero-heading">
@@ -103,8 +118,12 @@ const HomePage = () => {
           <div className="feature-text">
             <h3>Learn The Latest Skills</h3>
             <p>
-              Contrary to popular belief, Lorem Ipsum is not simply random
-              text...
+              Master in-demand tech skills through expert videos and hands-on
+              projects.
+              <br />
+              <Link className="links-banner" to="/courses">
+                Our Courses
+              </Link>
             </p>
           </div>
         </div>
@@ -118,8 +137,11 @@ const HomePage = () => {
           <div className="feature-text">
             <h3>Get Ready For a Career</h3>
             <p>
-              Contrary to popular belief, Lorem Ipsum is not simply random
-              text...
+              Get resume help, interview prep, and connect with hiring partners.
+              <br />
+              <Link className="links-banner" to="/events">
+                Our Events
+              </Link>
             </p>
           </div>
         </div>
@@ -133,8 +155,12 @@ const HomePage = () => {
           <div className="feature-text">
             <h3>Earn a Certificate</h3>
             <p>
-              Contrary to popular belief, Lorem Ipsum is not simply random
-              text...
+              Gain recognized credentials that validate your expertise to
+              employers.
+              <br />
+              <Link className="links-banner" to="/courses">
+                Our Courses
+              </Link>
             </p>
           </div>
         </div>
@@ -197,7 +223,7 @@ const HomePage = () => {
         <TeamSection />
       </section>
 
-      {/* Newsletter Section */}
+      {/* Newsletter Section
       <section>
         <div className="newsletter">
           <h2>Subscribe to our newsletter</h2>
@@ -217,7 +243,8 @@ const HomePage = () => {
             className="bulb-icon-news"
           />
         </div>
-      </section>
+      </section> */}
+      <Popup />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/ourVision.css";
+import Popup from "../components/Popup";
 
 const OurVision = () => {
   return (
@@ -28,6 +29,7 @@ const OurVision = () => {
           that one step ahead, and unlock your full potential like never before!
         </p>
       </div>
+      <Popup />
     </section>
   );
 };

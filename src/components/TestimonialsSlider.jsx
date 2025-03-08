@@ -4,33 +4,39 @@ import "./css/TestimonialsSlider.css";
 
 const testimonials = [
   {
-    text: "Teachings of the great explore of truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, pleasure itself!",
-    name: "Finlay Kirk",
-    role: "Web Developer",
+    text: "The team has been a game-changer for us! Their expertise, dedication, and innovative approach have made a huge impact. Truly a reliable and professional team!",
+    name: "Harsh Mathur",
+    role: "Founder, Zelax Global Solutions",
+    image: `${process.env.PUBLIC_URL}/images/harshMathur.jpeg`,
+  },
+  {
+    text: "An exceptional team! Their meticulous planning and flawless execution of events exceeded our expectations. Highly recommended for quality and reliability!",
+    name: "Khushboo Bhurat",
+    role: "IPR Expert",
+    image: `${process.env.PUBLIC_URL}/images/KhushbooBhurat.jpeg`,
+  },
+  {
+    text: "A fantastic experience working with them! Their innovative strategies and problem-solving skills stand out. Looking forward to more collaborations!",
+    name: "Harsh Chaudhary",
+    role: "Senior Network Engineer",
+    image: `${process.env.PUBLIC_URL}/images/HarshChaudhary.jpeg`,
+  },
+  {
+    text: "Brings creativity and precision to every project. Their dedication and professionalism make them a go-to team for impactful results!",
+    name: "Swapnil Bhurat",
+    role: "Head, Mechanical Dept",
+    image: `${process.env.PUBLIC_URL}/images/SwapnilBhurat.jpeg`,
+  },
+  {
+    text: "Highly impressed by their ability to turn ideas into reality! Their expertise in executing projects and organizing events is truly commendable.",
+    name: "Richa Sharma",
+    role: "Assistant Consultant, TCS",
     image: `${process.env.PUBLIC_URL}/images/Ellipse 34.png`,
   },
   {
-    text: "Complete account of the system and expound the actual Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots.",
-    name: "Dannette P. Cervantes",
-    role: "Web Designer",
-    image: `${process.env.PUBLIC_URL}/images/Ellipse 34.png`,
-  },
-  {
-    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.",
-    name: "Clara R. Altman",
-    role: "UI/UX Designer",
-    image: `${process.env.PUBLIC_URL}/images/Ellipse 34.png`,
-  },
-  {
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    name: "John Doe",
-    role: "Product Manager",
-    image: `${process.env.PUBLIC_URL}/images/Ellipse 34.png`,
-  },
-  {
-    text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots.",
-    name: "Jane Smith",
-    role: "Graphic Designer",
+    text: "A powerhouse of talent! Their structured approach, attention to detail, and commitment to excellence make them a pleasure to work with.",
+    name: "Vikas Kumar Singh",
+    role: "Specialist Master, Deloitte",
     image: `${process.env.PUBLIC_URL}/images/Ellipse 34.png`,
   },
 ];
@@ -89,14 +95,18 @@ const TestimonialsSlider = () => {
     <section className="testimonials-slider" {...swipeHandlers}>
       <div className="testimonials-header">
         <h2>What Client's Say</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing.</p>
+        <p>
+          Hear from our happy clients! Their experiences speak volumes about our
+          commitment to excellence.
+        </p>
       </div>
 
       <div className="slider-container">
         <div
           className="slider-wrapper"
           style={{
-            transform: `translateX(-${currentIndex * 310}px)`,
+            transform: `translateX(-${(currentIndex * 100) / cardsToShow}%)`,
+            width: `${(testimonials.length / cardsToShow) * 100}%`,
           }}
         >
           {testimonials.map((testimonial, index) => (
@@ -116,6 +126,10 @@ const TestimonialsSlider = () => {
             </div>
           ))}
         </div>
+
+        <button className="next-button" onClick={handleNext}>
+          &#10095;
+        </button>
       </div>
 
       <div className="dots">

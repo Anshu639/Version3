@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { FiMenu, FiX } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi"; // Added FiPhone
 import { FaCaretDown } from "react-icons/fa";
 
 import "./css/Header.css";
@@ -49,11 +49,18 @@ export default function Header() {
 
   return (
     <header className="header">
-      <div className="logo">
-        <img
-          src={`${process.env.PUBLIC_URL}/images/logo.png`}
-          alt="Book Store"
-        />
+      <div className="header-left">
+        <div className="logo">
+          <img
+            src={`${process.env.PUBLIC_URL}/images/logo.png`}
+            alt="Book Store"
+          />
+        </div>
+        {/* Enquiry Phone Section */}
+        {/* <div className="enquiry">
+          <FiPhone className="phone-icon" />
+          <span className="phone-number">+1 (234) 567-8900</span>
+        </div> */}
       </div>
 
       <button
@@ -98,7 +105,15 @@ export default function Header() {
                 </ul>
               )}
             </li>
-
+            <li>
+              <NavLink
+                to="/courses"
+                className={({ isActive }) => (isActive ? "active" : "")}
+                onClick={toggleMenu}
+              >
+                Courses
+              </NavLink>
+            </li>
             {/* Events Dropdown */}
             <li
               className={`nav-item ${isEventsDropdownOpen ? "open" : ""}`}

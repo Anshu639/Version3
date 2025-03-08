@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/WhyUs.css";
+import Popup from "../components/Popup";
 
 const WhyUs = () => {
   return (
@@ -20,32 +21,33 @@ const WhyUs = () => {
           <strong>What Sets Us Apart?</strong>
         </p>
         <p className="why-us-text">
-          <strong>Comprehensive Learning Approach</strong> – We blend academic, non-academic, and
-          skill-based experiences through workshops, competitions, expert-led
-          sessions, and immersive programs tailored to real-world applications.
+          <strong>Comprehensive Learning Approach</strong> – We blend academic,
+          non-academic, and skill-based experiences through workshops,
+          competitions, expert-led sessions, and immersive programs tailored to
+          real-world applications.
         </p>
         <p className="why-us-text">
-          <strong>End-to-End Event Management</strong> – From conceptualization to execution, we
-          ensure seamless organization of competitions, tech fairs, hackathons,
-          leadership programs, and customized training sessions that align with
-          institutional goals.
+          <strong>End-to-End Event Management</strong> – From conceptualization
+          to execution, we ensure seamless organization of competitions, tech
+          fairs, hackathons, leadership programs, and customized training
+          sessions that align with institutional goals.
         </p>
         <p className="why-us-text">
-          <strong>Industry & Academic Bridging</strong> – We foster collaborations between
-          institutions, corporates, and experts, ensuring that participants gain
-          practical exposure, networking opportunities, and insights into
-          emerging trends beyond traditional education.
+          <strong>Industry & Academic Bridging</strong> – We foster
+          collaborations between institutions, corporates, and experts, ensuring
+          that participants gain practical exposure, networking opportunities,
+          and insights into emerging trends beyond traditional education.
         </p>
         <p className="why-us-text">
-          <strong>Customizable & Scalable Programs</strong> – Whether it’s a school-level science
-          fest, university hackathon, corporate leadership training, or
-          specialized certification courses, we tailor our events to meet the
-          unique needs of every institution.
+          <strong>Customizable & Scalable Programs</strong> – Whether it’s a
+          school-level science fest, university hackathon, corporate leadership
+          training, or specialized certification courses, we tailor our events
+          to meet the unique needs of every institution.
         </p>
         <p className="why-us-text">
-        <strong>Proven Impact & Engagement</strong> – Our interactive approach ensures higher
-          participation, deeper learning retention, and enhanced skill
-          development, making every event a transformative experience.
+          <strong>Proven Impact & Engagement</strong> – Our interactive approach
+          ensures higher participation, deeper learning retention, and enhanced
+          skill development, making every event a transformative experience.
         </p>
         <p className="why-us-subtitle">
           <strong>Partner with Us</strong>
@@ -57,6 +59,7 @@ const WhyUs = () => {
           experiences!
         </p>
       </div>
+      <Popup />
     </section>
   );
 };

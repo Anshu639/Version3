@@ -5,6 +5,7 @@ import { GrLocation } from "react-icons/gr";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephone } from "react-icons/bs";
 import { FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa";
+import Popup from "../components/Popup";
 
 const ContactUs = () => {
   const [values, setValues] = useState({
@@ -44,17 +45,17 @@ const ContactUs = () => {
           <div className="info">
             <div className="information">
               <p>
-                <GrLocation /> One Step Ahead, Clock Tower, Dehradun
+                <GrLocation /> Karberi Grant, Badowala Dehradun
               </p>
             </div>
             <div className="information">
               <p>
-                <AiOutlineMail /> philomathnetworks@gmail.com
+                <AiOutlineMail /> info@philomathnetworks.com
               </p>
             </div>
             <div className="information">
               <p>
-                <BsTelephone /> +91 6396268840
+                <BsTelephone /> +91 8869832559
               </p>
             </div>
           </div>
@@ -125,6 +126,7 @@ const ContactUs = () => {
           </form>
         </div>
       </div>
+      <Popup />
     </div>
   );
 };

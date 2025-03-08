@@ -175,7 +175,19 @@
   line-height: 1.5;
   color: #ddd; /* Slightly lighter text color */
 }
+.links-banner {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
 
+.links-banner:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light background effect */
+  font-size: 16px; /* Increase font size */
+  cursor: pointer;
+  padding: 12px 18px; /* Slightly increase padding */
+}
 /* Learning Experience Section */
 .learning-experience {
   display: flex;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./css/Footer.css";
 
 const Footer = () => {
@@ -7,28 +8,28 @@ const Footer = () => {
       {/* Footer Links */}
       <div className="footer-links">
         <div className="footer-column">
-          <a href="/">
+          <Link to="/">
             <img
               src={`${process.env.PUBLIC_URL}/images/logo.png`}
               alt="Site Logo"
               className="footer-logo"
             />
-          </a>
+          </Link>
         </div>
         <div className="footer-column">
           <h3>Company</h3>
           <ul>
             <li>
-              <a href="/about">About Us</a>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
-              <a href="/Ourvision">Our Vision</a>
+              <Link to="/Ourvision">Our Vision</Link>
             </li>
             <li>
-              <a href="/whyus">Why Us</a>
+              <Link to="/whyus">Why Us</Link>
             </li>
             <li>
-              <a href="/clients">Our Clients</a>
+              <Link to="/clients">Our Clients</Link>
             </li>
           </ul>
         </div>
@@ -36,13 +37,16 @@ const Footer = () => {
           <h3>Services</h3>
           <ul>
             <li>
-              <a href="/events">Events</a>
+              <Link to="/courses">Courses</Link>
             </li>
             <li>
-              <a href="/newsletter">Newsletter</a>
+              <Link to="/events">Events</Link>
             </li>
             <li>
-              <a href="/blogs">Blogs</a>
+              <Link to="/newsletter">Newsletter</Link>
+            </li>
+            <li>
+              <Link to="/blogs">Blogs</Link>
             </li>
           </ul>
         </div>
@@ -50,13 +54,13 @@ const Footer = () => {
           <h3>Support</h3>
           <ul>
             <li>
-              <a href="/faq">FAQ</a>
+              <Link to="/faq">FAQ</Link>
             </li>
             <li>
-              <a href="/contactUs">Work with Us?</a>
+              <Link to="/contactUs">Work with Us?</Link>
             </li>
             <li>
-              <a href="/brochure">Brochure</a>
+              <Link to="/brochure">Brochure</Link>
             </li>
           </ul>
         </div>
@@ -64,11 +68,11 @@ const Footer = () => {
           <h3>Contact Info</h3>
           <ul>
             <li>
-              <a href="tel:+916396268840">+91 6396268840</a>
+              <a href="tel:+916396268840">+91 8869832559</a>
             </li>
             <li>
-              <a href="mailto:philomathnetworks@gmail.com">
-                philomathnetworks@gmail.com
+              <a href="mailto:info@philomathnetworks.com">
+                info@philomathnetworks.com
               </a>
             </li>
             <li>
@@ -77,7 +81,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                One Step Ahead, Clock Tower, Dehradun
+                Karberi Grant, Badowala Dehradun
               </a>
             </li>
           </ul>
@@ -86,7 +90,7 @@ const Footer = () => {
       <hr />
       {/* Bottom Footer */}
       <div className="footer-bottom">
-        <p>BookStore All Right Reserved, 2022</p>
+        <p>All Right Reserved, Philomath Networks Pvt. Ltd @2025</p>
       </div>
     </footer>
   );

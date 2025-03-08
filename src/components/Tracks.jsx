@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-import { FaClock, FaMapMarkerAlt, FaBuilding } from "react-icons/fa";
+import { FaClock } from "react-icons/fa";
+// import { FaClock, FaMapMarkerAlt, FaBuilding } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -24,52 +25,52 @@ const Tracks = () => {
     {
       id: 1,
       name: "Design Thinking Conference",
-      venue: "New York Convention Center",
-      organization: "Creative Minds",
+      // venue: "New York Convention Center",
+      // organization: "Creative Minds",
       date: "March 15, 2024",
       time: "10:00 AM - 4:00 PM",
       status: "Upcoming",
-      image: `${process.env.PUBLIC_URL}/images/Group 337.png`,
+      image: `${process.env.PUBLIC_URL}/images/design.png`,
     },
     {
       id: 2,
       name: "Full Stack Developer Summit",
-      venue: "San Francisco Tech Hub",
-      organization: "Tech Innovators",
+      // venue: "San Francisco Tech Hub",
+      // organization: "Tech Innovators",
       date: "April 5, 2024",
       time: "9:00 AM - 5:00 PM",
       status: "Registration Open",
-      image: `${process.env.PUBLIC_URL}/images/Group 337.png`,
+      image: `${process.env.PUBLIC_URL}/images/fullStack.png`,
     },
     {
       id: 3,
       name: "AI & Machine Learning Expo",
-      venue: "Los Angeles AI Center",
-      organization: "AI Global",
+      // venue: "Los Angeles AI Center",
+      // organization: "AI Global",
       date: "May 20, 2024",
       time: "11:00 AM - 6:00 PM",
       status: "Registration Close",
-      image: `${process.env.PUBLIC_URL}/images/Group 337.png`,
+      image: `${process.env.PUBLIC_URL}/images/ai.png`,
     },
     {
       id: 4,
       name: "Cybersecurity Awareness ",
-      venue: "Washington DC Cyber Lab",
-      organization: "CyberSafe Community",
+      // venue: "Washington DC Cyber Lab",
+      // organization: "CyberSafe Community",
       date: "June 10, 2024",
       time: "1:00 PM - 7:00 PM",
       status: "Upcoming",
-      image: `${process.env.PUBLIC_URL}/images/Group 337.png`,
+      image: `${process.env.PUBLIC_URL}/images/cyber.png`,
     },
     {
       id: 5,
       name: "Entrepreneurship Bootcamp",
-      venue: "Chicago Business Hub",
-      organization: "Startup Nation",
+      // venue: "Chicago Business Hub",
+      // organization: "Startup Nation",
       date: "July 8, 2024",
       time: "10:00 AM - 3:00 PM",
       status: "Registration Open",
-      image: `${process.env.PUBLIC_URL}/images/Group 337.png`,
+      image: `${process.env.PUBLIC_URL}/images/entrepreneuship.png`,
     },
   ];
 
@@ -113,7 +114,8 @@ const Tracks = () => {
             <img src={event.image} alt={event.name} className="event-image" />
             <div className="event-content">
               <h3>{event.name}</h3>
-              <div className="event-meta">
+              <br />
+              {/* <div className="event-meta">
                 <span>
                   <FaMapMarkerAlt className="meta-icon" />
                   {event.venue}
@@ -122,7 +124,7 @@ const Tracks = () => {
                   <FaBuilding className="meta-icon" />
                   {event.organization}
                 </span>
-              </div>
+              </div> */}
               <div className="event-date-time">
                 <span>{event.date}</span>
                 <span>{event.time}</span>

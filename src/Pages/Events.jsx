@@ -11,6 +11,7 @@ import campsImg from "../Images/camps.png";
 import communityImg from "../Images/community.png";
 import awarenessImg from "../Images/awareness.png";
 import customImg from "../Images/custom.png";
+import Popup from "../components/Popup";
 
 const Events = () => {
   const location = useLocation();
@@ -253,6 +254,7 @@ const Events = () => {
           </button>
         </div>
       </div>
+      <Popup />
     </div>
   );
 };

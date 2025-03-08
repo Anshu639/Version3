@@ -20,10 +20,11 @@
 }
 
 /* Slider Styling */
-.slider-container {
+.slider-container-team {
   display: flex;
   align-items: center;
   overflow: hidden;
+  height: 600px;
 }
 
 .slider-wrapper {

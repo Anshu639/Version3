@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/aboutUs.css";
 import aboutImage from "../Images/aboutUs.png"; // Update the path based on your project
+import Popup from "../components/Popup";
 
 const AboutUs = () => {
   return (
@@ -50,6 +51,7 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
+      <Popup />
     </section>
   );
 };
