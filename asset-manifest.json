@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/Version3/static/css/main.85f70925.css",
-    "main.js": "/Version3/static/js/main.ccb1aa74.js",
+    "main.css": "/Version3/static/css/main.446747ab.css",
+    "main.js": "/Version3/static/js/main.e35b5524.js",
+    "static/media/powerBi.png": "/Version3/static/media/powerBi.dd5da2ab98a787266a55.png",
     "static/media/third.png": "/Version3/static/media/third.7264e8d287d643d49e76.png",
     "static/media/aboutUs.png": "/Version3/static/media/aboutUs.2e70336dd96ac2c75863.png",
     "static/media/techFairs.png": "/Version3/static/media/techFairs.b5bec95f77041aef1388.png",
@@ -23,11 +24,11 @@
     "static/media/slick.ttf": "/Version3/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Version3/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Version3/index.html",
-    "main.85f70925.css.map": "/Version3/static/css/main.85f70925.css.map",
-    "main.ccb1aa74.js.map": "/Version3/static/js/main.ccb1aa74.js.map"
+    "main.446747ab.css.map": "/Version3/static/css/main.446747ab.css.map",
+    "main.e35b5524.js.map": "/Version3/static/js/main.e35b5524.js.map"
   },
   "entrypoints": [
-    "static/css/main.85f70925.css",
-    "static/js/main.ccb1aa74.js"
+    "static/css/main.446747ab.css",
+    "static/js/main.e35b5524.js"
   ]
 }
