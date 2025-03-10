@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import './css/ImageSlider.css';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from "react";
+import "./css/ImageSlider.css";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const ImageSlider = ({ images, autoPlayInterval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,11 +10,15 @@ const ImageSlider = ({ images, autoPlayInterval = 5000 }) => {
   const minSwipeDistance = 50;
 
   const nextSlide = useCallback(() => {
-    setCurrentIndex((prevIndex) => prevIndex === images.length - 1 ? 0 : prevIndex + 1);
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
   }, [images.length]);
 
   const prevSlide = useCallback(() => {
-    setCurrentIndex((prevIndex) => prevIndex === 0 ? images.length - 1 : prevIndex - 1);
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   }, [images.length]);
 
   const goToSlide = (index) => {
@@ -45,28 +49,44 @@ const ImageSlider = ({ images, autoPlayInterval = 5000 }) => {
   }, [autoPlayInterval, nextSlide]);
 
   return (
-    <div className="slider-container" onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd}>
+    <div
+      className="slider-container"
+      onTouchStart={onTouchStart}
+      onTouchMove={onTouchMove}
+      onTouchEnd={onTouchEnd}
+    >
       <div className="slider">
         {images.map((image, index) => (
-          <div 
-            key={index} 
-            className={`slide ${index === currentIndex ? 'active' : ''}`} 
-            style={{ backgroundImage: `url(${image})`, transform: `translateX(${(index - currentIndex) * 100}%)` }}
+          <div
+            key={index}
+            className={`slide ${index === currentIndex ? "active" : ""}`}
+            style={{
+              backgroundImage: `url(${image})`,
+              transform: `translateX(${(index - currentIndex) * 100}%)`,
+            }}
           />
         ))}
       </div>
-      <button className="arrow prev" onClick={prevSlide} aria-label="Previous slide">
+      <button
+        className="arrow prev"
+        onClick={prevSlide}
+        aria-label="Previous slide"
+      >
         <ChevronLeft size={24} />
       </button>
-      <button className="arrow next" onClick={nextSlide} aria-label="Next slide">
+      <button
+        className="arrow next"
+        onClick={nextSlide}
+        aria-label="Next slide"
+      >
         <ChevronRight size={24} />
       </button>
       <div className="indicators">
         {images.map((_, index) => (
-          <button 
-            key={index} 
-            className={`indicator ${index === currentIndex ? 'active' : ''}`} 
-            onClick={() => goToSlide(index)} 
+          <button
+            key={index}
+            className={`indicator ${index === currentIndex ? "active" : ""}`}
+            onClick={() => goToSlide(index)}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

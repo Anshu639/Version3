@@ -222,28 +222,6 @@ const HomePage = () => {
       <section>
         <TeamSection />
       </section>
-
-      {/* Newsletter Section
-      <section>
-        <div className="newsletter">
-          <h2>Subscribe to our newsletter</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing.</p>
-          <div className="newsletter-form">
-            <input type="email" placeholder="Email Address" />
-            <button type="button">Send</button>
-          </div>
-          <img
-            src={`${process.env.PUBLIC_URL}/images/orange-arrow.png`}
-            alt="Arrow"
-            className="arrow-icon-news"
-          />
-          <img
-            src={`${process.env.PUBLIC_URL}/images/casual-life-3d-idea-lamp 1.png`}
-            alt="Bulb"
-            className="bulb-icon-news"
-          />
-        </div>
-      </section> */}
       <Popup />
     </div>
   );

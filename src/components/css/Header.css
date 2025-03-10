@@ -48,11 +48,6 @@
   font-size: 1.1rem;
 }
 
-/* Active Link Underline */
-/* .nav-links a.active {
-  border-bottom: 3px solid black;
-} */
-
 /* Dropdown Menu */
 .nav-item {
   position: relative;
@@ -168,10 +163,12 @@
 }
 
 @media (max-width: 767px) {
+  /* Hamburger becomes visible */
   .hamburger {
     display: block;
   }
 
+  /* Fullscreen overlay nav */
   .nav-container {
     position: fixed;
     top: 0;
@@ -179,6 +176,7 @@
     width: 100%;
     height: 100vh;
     background-color: black;
+    color: white;
     flex-direction: column;
     justify-content: center;
     transition: left 0.3s ease-in-out;
@@ -189,16 +187,48 @@
     left: 0;
   }
 
+  /* Nav links in a column */
   .nav-links {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
   }
 
   .nav-links a {
     font-size: 1.5rem;
+    color: white;
   }
 
   .sign-in-btn {
     margin-top: 20px;
+  }
+
+  /* Override default "hover" dropdown in mobile */
+  .nav-item:hover .dropdown-menu {
+    display: none;
+  }
+
+  /* Show dropdown when .open is toggled on the li.nav-item */
+  .nav-item.open .dropdown-menu {
+    display: block;
+    position: static; /* so it flows under the nav item */
+    background-color: transparent; /* match your mobile background if you prefer */
+    box-shadow: none; /* remove shadow if you want a seamless look */
+    margin-top: 10px; /* optional spacing */
+    text-align: center;
+  }
+
+  /* Adjust dropdown item styling for black background if desired */
+  .nav-sub-item {
+    padding: 10px 20px;
+  }
+
+  .nav-sub-item a {
+    color: white; /* So it's visible against black if needed */
+    background-color: transparent;
+  }
+
+  .nav-sub-item a:hover {
+    background-color: #333; /* Optional hover effect */
+    color: white;
   }
 }

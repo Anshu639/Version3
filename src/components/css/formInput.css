@@ -1,31 +1,78 @@
 .formInput {
-    display: flex;
-    flex-direction: column;
-    width: 280px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 280px; /* Ensures a good max width for larger screens */
+  margin: 0 auto; /* Centers the form on smaller screens */
+}
+
+.input {
+  padding: 11px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  color: rgb(40, 39, 39);
+  font-size: 14px;
+  width: 100%; /* Ensures the input takes full width of its container */
+}
+
+.label {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: -5px;
+  color: gray;
+}
+
+.span {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+.input:invalid[focused="true"] {
+  border: 1px solid red;
+}
+
+.input:invalid[focused="true"] ~ .span {
+  display: block;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets and small screens */
+@media (max-width: 768px) {
+  .formInput {
+    max-width: 100%;
+    width: 90%; /* Allows some margin on smaller screens */
   }
+
   .input {
-    padding: 11px;
-    margin: 5px 0px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    color: rgb(40, 39, 39);
+    font-size: 14px;
+    padding: 10px;
   }
+
+  .label {
+    font-size: 14px;
+  }
+}
+
+/* Extra small screens (mobile devices) */
+@media (max-width: 480px) {
+  .formInput {
+    width: 95%; /* Makes it occupy more space while maintaining margin */
+  }
+
+  .input {
+    font-size: 13px;
+    padding: 9px;
+  }
+
   .label {
     font-size: 12px;
-    margin-top: 5px;
-    margin-bottom: -5px;
-    color: gray;
   }
+
   .span {
-    font-size: 12px;
-    padding: 3px;
-    color: red;
-    display: none;
+    font-size: 11px;
   }
-  .input:invalid[focused="true"] {
-    border: 1px solid red;
-  }
-  .input:invalid[focused="true"] ~ span {
-    display: block;
-  }
-  
+}

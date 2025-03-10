@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { FiMenu, FiX } from "react-icons/fi"; // Added FiPhone
+import { FiMenu, FiX } from "react-icons/fi";
 import { FaCaretDown } from "react-icons/fa";
 
 import "./css/Header.css";
@@ -22,11 +22,13 @@ export default function Header() {
   const handleAboutClick = () => {
     navigate("/about");
     closeDropdowns();
+    if (isOpen) toggleMenu();
   };
 
   const handleEventsClick = () => {
     navigate("/events");
     closeDropdowns();
+    if (isOpen) toggleMenu();
   };
 
   const eventsDropdownItems = [
@@ -51,16 +53,13 @@ export default function Header() {
     <header className="header">
       <div className="header-left">
         <div className="logo">
-          <img
-            src={`${process.env.PUBLIC_URL}/images/logo.png`}
-            alt="Book Store"
-          />
+          <NavLink to="/" onClick={toggleMenu}>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/logo.png`}
+              alt="Book Store"
+            />
+          </NavLink>
         </div>
-        {/* Enquiry Phone Section */}
-        {/* <div className="enquiry">
-          <FiPhone className="phone-icon" />
-          <span className="phone-number">+1 (234) 567-8900</span>
-        </div> */}
       </div>
 
       <button
@@ -87,12 +86,45 @@ export default function Header() {
             {/* About Us Dropdown */}
             <li
               className={`nav-item ${isAboutDropdownOpen ? "open" : ""}`}
-              onMouseEnter={() => setIsAboutDropdownOpen(true)}
-              onMouseLeave={closeDropdowns}
+              onMouseEnter={() => {
+                // Only open on hover if NOT mobile
+                if (!isOpen) setIsAboutDropdownOpen(true);
+              }}
+              onMouseLeave={() => {
+                // Only close on hover out if NOT mobile
+                if (!isOpen) closeDropdowns();
+              }}
             >
-              <span className="nav-links" onClick={handleAboutClick}>
-                About Us <FaCaretDown className="dropdown-icon" />
+              {/* Put the text and caret side by side, but the caret is NOT inside the link */}
+              <span className="nav-links">
+                <NavLink
+                  to="/about"
+                  onClick={() => {
+                    // In desktop mode, user can click to navigate
+                    // In mobile mode (isOpen=true), we do handleAboutClick.
+                    if (!isOpen) {
+                      handleAboutClick();
+                    } else {
+                      // If you want tapping "About Us" in mobile to also navigate directly:
+                      handleAboutClick();
+                    }
+                  }}
+                >
+                  About Us
+                </NavLink>
+                <FaCaretDown
+                  className="dropdown-icon"
+                  onClick={(e) => {
+                    // Stop this click from navigating the NavLink
+                    e.stopPropagation();
+                    // Toggle dropdown in mobile mode
+                    if (isOpen) {
+                      setIsAboutDropdownOpen(!isAboutDropdownOpen);
+                    }
+                  }}
+                />
               </span>
+
               {isAboutDropdownOpen && (
                 <ul className="dropdown-menu">
                   {aboutDropdownItems.map((item, index) => (
@@ -105,6 +137,7 @@ export default function Header() {
                 </ul>
               )}
             </li>
+
             <li>
               <NavLink
                 to="/courses"
@@ -114,15 +147,41 @@ export default function Header() {
                 Courses
               </NavLink>
             </li>
+
             {/* Events Dropdown */}
             <li
               className={`nav-item ${isEventsDropdownOpen ? "open" : ""}`}
-              onMouseEnter={() => setIsEventsDropdownOpen(true)}
-              onMouseLeave={closeDropdowns}
+              onMouseEnter={() => {
+                if (!isOpen) setIsEventsDropdownOpen(true);
+              }}
+              onMouseLeave={() => {
+                if (!isOpen) closeDropdowns();
+              }}
             >
-              <span className="nav-links" onClick={handleEventsClick}>
-                Events <FaCaretDown className="dropdown-icon" />
+              <span className="nav-links">
+                <NavLink
+                  to="/events"
+                  onClick={() => {
+                    if (!isOpen) {
+                      handleEventsClick();
+                    } else {
+                      handleEventsClick();
+                    }
+                  }}
+                >
+                  Events
+                </NavLink>
+                <FaCaretDown
+                  className="dropdown-icon"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (isOpen) {
+                      setIsEventsDropdownOpen(!isEventsDropdownOpen);
+                    }
+                  }}
+                />
               </span>
+
               {isEventsDropdownOpen && (
                 <ul className="dropdown-menu">
                   {eventsDropdownItems.map((item, index) => (

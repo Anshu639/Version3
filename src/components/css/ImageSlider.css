@@ -1,16 +1,22 @@
+/* Slider Container */
 .slider-container {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 50vh; /* Adjusts based on viewport */
+  max-height: 500px;
   overflow: hidden;
 }
 
+/* Slider Wrapper */
 .slider {
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
+  margin: auto;
 }
 
+/* Slide Styling */
 .slide {
   position: absolute;
   top: 0;
@@ -19,16 +25,22 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  transition: transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 }
 
+.slide.active {
+  opacity: 1;
+}
+
+/* Navigation Arrows */
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   border: none;
   border-radius: 50%;
   display: flex;
@@ -40,33 +52,33 @@
 }
 
 .arrow:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .prev {
-  left: 20px;
+  left: 15px;
 }
 
 .next {
-  right: 20px;
+  right: 15px;
 }
 
+/* Indicators (Dots) */
 .indicators {
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: 8px;
   z-index: 10;
 }
 
 .indicator {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.5);
-  border: none;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -75,58 +87,71 @@
   background-color: white;
 }
 
-/* Animation for slide transitions */
-.slide {
-  opacity: 0.7;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-}
+/* Media Queries for Different Devices */
+@media (max-width: 1024px) {
+  .slider-container {
+    height: 45vh;
+    max-height: 400px;
+  }
 
-.slide.active {
-  opacity: 1;
-}
-
-/* Mobile Responsive Styles */
-@media (max-width: 768px) {
   .arrow {
-    width: 32px;
-    height: 32px;
-  }
-
-  .prev {
-    left: 10px;
-  }
-
-  .next {
-    right: 10px;
-  }
-
-  .indicator {
-    width: 10px;
-    height: 10px;
+    width: 35px;
+    height: 35px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
+  .slider-container {
+    height: 40vh;
+    max-height: 300px;
+  }
+
   .arrow {
-    width: 28px;
-    height: 28px;
-  }
-
-  .prev {
-    left: 8px;
-  }
-
-  .next {
-    right: 8px;
+    width: 30px;
+    height: 30px;
   }
 
   .indicators {
-    bottom: 15px;
-    gap: 8px;
+    bottom: 10px;
   }
 
   .indicator {
     width: 8px;
     height: 8px;
+  }
+
+  /* IMPORTANT: Use 'contain' on smaller screens to avoid zoomed images */
+  .slide {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-container {
+    height: 35vh;
+    max-height: 250px;
+  }
+
+  .arrow {
+    width: 28px;
+    height: 28px;
+  }
+
+  .indicators {
+    bottom: 8px;
+  }
+
+  .indicator {
+    width: 7px;
+    height: 7px;
+  }
+
+  /* Keep the contain approach on even smaller screens */
+  .slide {
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

@@ -12,6 +12,7 @@
   font-weight: bold;
   margin-bottom: 50px;
   text-decoration: underline;
+  color: #222;
 }
 
 /* Event Section */
@@ -23,22 +24,10 @@
   gap: 50px;
 }
 
-/* Reverse Section (Text Left, Image Right) */
-.reverse {
-  flex-direction: row;
-}
-
-.reverse .content-container {
-  order: 1; /* Forces text on the left */
-}
-
-.reverse .image-container {
-  order: 2; /* Forces image on the right */
-}
-
 /* Image Container */
 .image-container {
   flex: 1;
+  min-width: 300px;
 }
 
 .image-container img {
@@ -46,63 +35,72 @@
   height: 400px;
   object-fit: cover;
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
 }
 
 /* Content Container */
 .content-container {
   flex: 1;
   padding: 20px;
-  text-align: left; /* Ensures left alignment */
+  text-align: left;
 }
 
-/* Heading */
 .content-container h2 {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 12px;
   text-align: justify;
+  color: #111;
 }
 
-/* Paragraph */
 .content-container p {
   font-size: 18px;
   line-height: 1.6;
-  color: #333;
+  color: #444;
   text-align: justify;
 }
 
 /* Button */
 .event-button {
-  margin-top: 40px;
-  padding: 14px 30px;
+  margin-top: 30px;
+  padding: 12px 28px;
   background-color: black;
   color: white;
   border-radius: 10px;
   border: none;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .event-button:hover {
-  background-color: #444;
+  background-color: #555;
 }
 
-/* Button Link */
 .btn-link {
   color: white;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .btn-link:hover {
   color: pink;
 }
-/* Mobile Responsive */
-@media (max-width: 900px) {
+
+/* Responsive Design */
+@media (max-width: 1024px) {
   .section {
     flex-direction: column;
     text-align: center;
+    gap: 30px;
   }
 
+  /* Force one image, then its content */
+  .section,
   .reverse {
     flex-direction: column;
   }
@@ -116,11 +114,54 @@
     height: auto;
   }
 
-  .reverse .content-container {
-    order: unset; /* Resets order on mobile for proper stacking */
+  /* Ensure same order for all sections */
+  .content-container {
+    order: 2;
   }
 
-  .reverse .image-container {
-    order: unset;
+  .image-container {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 32px;
+  }
+
+  .content-container h2 {
+    font-size: 24px;
+  }
+
+  .content-container p {
+    font-size: 16px;
+  }
+
+  .event-button {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 15px;
+  }
+
+  .mainHeading {
+    font-size: 28px;
+  }
+
+  .content-container h2 {
+    font-size: 22px;
+  }
+
+  .content-container p {
+    font-size: 15px;
+  }
+
+  .event-button {
+    padding: 8px 20px;
+    font-size: 14px;
   }
 }

@@ -95,7 +95,7 @@ const TestimonialsSlider = () => {
     <section className="testimonials-slider" {...swipeHandlers}>
       <div className="testimonials-header">
         <h2>What Client's Say</h2>
-        <p>
+        <p className="parag">
           Hear from our happy clients! Their experiences speak volumes about our
           commitment to excellence.
         </p>

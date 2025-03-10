@@ -13,6 +13,10 @@
   color: #333;
   margin-bottom: 10px;
 }
+.parag {
+  text-align: center;
+  justify-content: center;
+}
 
 .testimonials-header p {
   font-size: 1rem;

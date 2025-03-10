@@ -116,7 +116,7 @@ const TeamSection = () => {
     <section className="team-section" {...swipeHandlers}>
       <div className="team-header">
         <h2>Our Team</h2>
-        <p>
+        <p className="para">
           Meet our skilled team, committed to innovation, excellence, and
           delivering great results.
         </p>
