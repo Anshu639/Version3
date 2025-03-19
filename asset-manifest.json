@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/Version3/static/css/main.68a22941.css",
-    "main.js": "/Version3/static/js/main.980086b9.js",
-    "static/media/powerBi.png": "/Version3/static/media/powerBi.dd5da2ab98a787266a55.png",
+    "main.css": "/Version3/static/css/main.18ba182d.css",
+    "main.js": "/Version3/static/js/main.beaedf01.js",
+    "static/media/banner-one-bg-shape-1.png": "/Version3/static/media/banner-one-bg-shape-1.075bb9c2d4f96d772586.png",
+    "static/media/powerBi.jpg": "/Version3/static/media/powerBi.4f81381d7980e5adb142.jpg",
     "static/media/third.png": "/Version3/static/media/third.7264e8d287d643d49e76.png",
     "static/media/aboutUs.png": "/Version3/static/media/aboutUs.2e70336dd96ac2c75863.png",
     "static/media/techFairs.png": "/Version3/static/media/techFairs.b5bec95f77041aef1388.png",
@@ -24,11 +25,11 @@
     "static/media/slick.ttf": "/Version3/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Version3/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Version3/index.html",
-    "main.68a22941.css.map": "/Version3/static/css/main.68a22941.css.map",
-    "main.980086b9.js.map": "/Version3/static/js/main.980086b9.js.map"
+    "main.18ba182d.css.map": "/Version3/static/css/main.18ba182d.css.map",
+    "main.beaedf01.js.map": "/Version3/static/js/main.beaedf01.js.map"
   },
   "entrypoints": [
-    "static/css/main.68a22941.css",
-    "static/js/main.980086b9.js"
+    "static/css/main.18ba182d.css",
+    "static/js/main.beaedf01.js"
   ]
 }
