@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Version3/static/css/main.18ba182d.css",
-    "main.js": "/Version3/static/js/main.beaedf01.js",
+    "main.css": "/Version3/static/css/main.ac078dea.css",
+    "main.js": "/Version3/static/js/main.b3603de1.js",
     "static/media/banner-one-bg-shape-1.png": "/Version3/static/media/banner-one-bg-shape-1.075bb9c2d4f96d772586.png",
     "static/media/powerBi.jpg": "/Version3/static/media/powerBi.4f81381d7980e5adb142.jpg",
     "static/media/third.png": "/Version3/static/media/third.7264e8d287d643d49e76.png",
@@ -25,11 +25,11 @@
     "static/media/slick.ttf": "/Version3/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Version3/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Version3/index.html",
-    "main.18ba182d.css.map": "/Version3/static/css/main.18ba182d.css.map",
-    "main.beaedf01.js.map": "/Version3/static/js/main.beaedf01.js.map"
+    "main.ac078dea.css.map": "/Version3/static/css/main.ac078dea.css.map",
+    "main.b3603de1.js.map": "/Version3/static/js/main.b3603de1.js.map"
   },
   "entrypoints": [
-    "static/css/main.18ba182d.css",
-    "static/js/main.beaedf01.js"
+    "static/css/main.ac078dea.css",
+    "static/js/main.b3603de1.js"
   ]
 }
