@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Version3/static/css/main.3f8b6bf1.css",
-    "main.js": "/Version3/static/js/main.51d9f2ee.js",
+    "main.css": "/Version3/static/css/main.ec87d8d6.css",
+    "main.js": "/Version3/static/js/main.159b0642.js",
     "static/media/banner-one-bg-shape-1.png": "/Version3/static/media/banner-one-bg-shape-1.075bb9c2d4f96d772586.png",
     "static/media/powerBi.jpg": "/Version3/static/media/powerBi.4f81381d7980e5adb142.jpg",
     "static/media/contact.jpg": "/Version3/static/media/contact.6c798a7e32f8be17b2a4.jpg",
@@ -26,11 +26,11 @@
     "static/media/slick.ttf": "/Version3/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Version3/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Version3/index.html",
-    "main.3f8b6bf1.css.map": "/Version3/static/css/main.3f8b6bf1.css.map",
-    "main.51d9f2ee.js.map": "/Version3/static/js/main.51d9f2ee.js.map"
+    "main.ec87d8d6.css.map": "/Version3/static/css/main.ec87d8d6.css.map",
+    "main.159b0642.js.map": "/Version3/static/js/main.159b0642.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f8b6bf1.css",
-    "static/js/main.51d9f2ee.js"
+    "static/css/main.ec87d8d6.css",
+    "static/js/main.159b0642.js"
   ]
 }
