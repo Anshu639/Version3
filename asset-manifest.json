@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/Version3/static/css/main.ec87d8d6.css",
-    "main.js": "/Version3/static/js/main.2b0cd2f6.js",
+    "main.css": "/Version3/static/css/main.ba79cd6b.css",
+    "main.js": "/Version3/static/js/main.1d9d0b8b.js",
     "static/media/banner-one-bg-shape-1.png": "/Version3/static/media/banner-one-bg-shape-1.075bb9c2d4f96d772586.png",
-    "static/media/powerBi.jpg": "/Version3/static/media/powerBi.4f81381d7980e5adb142.jpg",
     "static/media/third.png": "/Version3/static/media/third.117fae47a55307924fdf.png",
     "static/media/contact.jpg": "/Version3/static/media/contact.6c798a7e32f8be17b2a4.jpg",
     "static/media/aboutUs.png": "/Version3/static/media/aboutUs.2e70336dd96ac2c75863.png",
+    "static/media/mobile-third.png": "/Version3/static/media/mobile-third.31a01b3c642334ebff27.png",
     "static/media/techFairs.png": "/Version3/static/media/techFairs.b5bec95f77041aef1388.png",
     "static/media/camps.png": "/Version3/static/media/camps.7c3d884dfead7447116c.png",
     "static/media/first.png": "/Version3/static/media/first.f2e7304c2bba0b101c7f.png",
@@ -14,6 +14,8 @@
     "static/media/community.png": "/Version3/static/media/community.c51ac8e1c3f3ab0543b8.png",
     "static/media/custom.png": "/Version3/static/media/custom.fa14a45396fc1b9615e8.png",
     "static/media/training.png": "/Version3/static/media/training.5a446afe79b9010c53bf.png",
+    "static/media/mobile-first.png": "/Version3/static/media/mobile-first.025fb2ac513259ad10c0.png",
+    "static/media/mobile-second.png": "/Version3/static/media/mobile-second.8291bfb5b4c80cc7fd79.png",
     "static/media/workshop.png": "/Version3/static/media/workshop.1c0011cc72445a8e3dd4.png",
     "static/media/awareness.png": "/Version3/static/media/awareness.6197d8dc5cf1a28e9f09.png",
     "static/media/academic.png": "/Version3/static/media/academic.6d16965851db7ced4dc7.png",
@@ -26,11 +28,11 @@
     "static/media/slick.ttf": "/Version3/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Version3/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Version3/index.html",
-    "main.ec87d8d6.css.map": "/Version3/static/css/main.ec87d8d6.css.map",
-    "main.2b0cd2f6.js.map": "/Version3/static/js/main.2b0cd2f6.js.map"
+    "main.ba79cd6b.css.map": "/Version3/static/css/main.ba79cd6b.css.map",
+    "main.1d9d0b8b.js.map": "/Version3/static/js/main.1d9d0b8b.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec87d8d6.css",
-    "static/js/main.2b0cd2f6.js"
+    "static/css/main.ba79cd6b.css",
+    "static/js/main.1d9d0b8b.js"
   ]
 }
